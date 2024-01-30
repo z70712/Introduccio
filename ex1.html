@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exercici 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function Verificar() {
+            if (document.getElementById("nombre").value > -1 && document.getElementById("nombre").value < 1)
+                document.getElementById("resultat").innerHTML = "SÍ esta dins l'interval.";
+            else
+                document.getElementById("resultat").innerHTML = "NO esta dins l'interval.";
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        <h2><b>Introdueix un nombre:</b></h2>
+        <input type="number" id="nombre">
+        <button onclick="Verificar();">Verificar</button>
+        <div id="resultat">Aqui apareixera el resultat!</div>
+        </center>
+    </body>
+</html>
+

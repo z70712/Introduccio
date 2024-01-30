@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exercici 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function Radi() {
+            document.getElementById("longitud").innerHTML = document.getElementById("nombre").value * 2 * Math.PI; 
+            document.getElementById("area").innerHTML = Math.pow(document.getElementById("nombre").value, 2) * Math.PI; 
+            document.getElementById("diametre").innerHTML = document.getElementById("nombre").value * 2;  
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        <h2><b>Introdueix un radi:</b></h2>
+        <input type="number" id="nombre">
+        <button onclick="Radi();">Verificar</button>
+        <h3>Longitud:</h3>
+        <div id="longitud">Aqui apareixera el perimetre!</div>
+        <h3>Area:</h3>
+        <div id="area">Aqui apareixera l'area!</div>
+        <h3>Diametre:</h3>
+        <div id="diametre">Aqui apareixera el diametre!</div>
+        </center>
+    </body>
+</html>
